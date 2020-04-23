@@ -1,0 +1,16 @@
+ @media print{
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    }
+body{
+    width: auto;
+}
+article{
+    width:90%;
+}
+.topnav {
+    display: none;
+}
+h1, h2, h3 {
+    page-break-after: avoid;
+}

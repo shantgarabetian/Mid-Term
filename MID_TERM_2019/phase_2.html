@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shant Garabetian</title>
+    <link rel="icon" href="./favicon_io/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/phase_2.css">
+    <link href="https://fonts.googleapis.com/css?family=Sort+Mill+Goudy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/print.css" media="print">
+
+</head>
+
+<body>
+    <header>
+        <h2>Shant Garabetian</h2>
+    </header>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Shant</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="phase_2.html" class="active">PhaseII</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <main>
+        <h3>Shant Garabetian</h3>
+        <p>Design web applications using professional cutting-edge appealing approach, develop and collaborate with creative team to deliver interactive web applications. Maintain industry requirements and technical specifications. Develop vibrant, secure websites using interactive features.</p>
+        <p> Seeking a position as an Entry Level Web Designer/developer to utilize my educational skills in the best possible way for achieving the company’s goals. Highly interested in an internship program that is designed to provide an opportunity to gain knowledge of and exposure to a working studio environment.</p>
+
+
+        <h3>Forms Info</h3>
+        <form onsubmit="return Result();">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" autofocus><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email"><br>
+            Comments:<br>
+            <textarea id="comments" plceholder="if you have any comments, please enter them here.">
+        </textarea>
+            <input type="submit" onclick="Result()" id="button" value="Submit">
+            <input type="reset" onclick="myReset()" id="reset">
+        </form>
+        <figure>
+            <p id="roll_over"></p>
+            <figcaption>Shant Garabetian [Rollover/Hover]</figcaption>
+
+        </figure>
+        <audio id="audioplayer" controls autoplay>
+            <source src="Audio/Mariah%20Carey%20-%20All%20I%20Want%20For%20Christmas%20Is%20You%20(Official%20Music%20Video)%20(192%20%20kbps).mp3">Mariah Carey.</audio>
+        <h3>Personal Web Site</h3>
+        <p>During design, a game concept is fleshed out. Mechanisms are specified in terms of components (boards, cards, on-screen entities, etc.) and rules. The play sequence and possible player actions are defined, as well as how the game starts, ends, and what is its winning condition. In video games, storyboards and screen mockups may be created.</p>
+
+        <p>Game design is the art of applying design and aesthetics to create a game for entertainment or for educational, exercise, or experimental purposes. Increasingly, elements and principles of game design are also applied to other interactions, in the form of gamification.</p>
+        <p>Click the link <a href="https://shantgarabetian.com" title="Shant's personal web site">Shant Garabetian.</a></p>
+        
+        <p>The Current Date is :  </p>
+        <p id=current_date> </p>
+        <script>
+            var x = new Date();
+            document.getElementById("current_date").innerHTML = x;
+        </script>
+
+    </main>
+    <aside>
+
+        <h3>Game design Career</h3>
+        <p>Game studies or gaming theory is a discipline that deals with the critical study of games, game design, players, and their role in society and culture. Prior to the late-twentieth century, the academic study of games was rare and limited to fields such as history and anthropology. As the video game revolution took off in the early 1980s, so did academic interest in games, resulting in a field that draws on diverse methodologies and schools of thought. These influences may be characterized broadly in three ways:
+        </p>
+        <ul>
+            <li>The social science approach</li>
+            <li>The humanities approach</li>
+            <li>The industry and engineering approach.</li>
+        </ul>
+        <figure>
+            <a href="https://shantgarabetian.com"><img class="image" src="images/shant.jpg" alt="shant's photo" width="150" height="250"></a>
+            <figcaption>Shant Garabetian/ transform + transition/ Linked Img/ On Hover.</figcaption>
+        </figure>
+        <h3>Image Map</h3>
+        <div id="map">
+            <ol class="circle">
+                <li>Click The Dark Gray Rectangle.</li>
+                <li>Click The Small Dark Gray Circle.</li>
+            </ol>
+
+            <img src="images/Shapes.jpeg" alt=" Gray Black White Shapes" usemap="#map_shapes" width="300" height="200">
+
+            <map name="map_shapes">
+                <area shape="rect" coords="70,50,130,100" alt="Contact" href="contact.html">
+
+                <area shape="circle" coords="212,175,17" alt="Shant's Page" href="index.html">
+            </map>
+
+        </div>
+    </aside>
+    <footer>
+        <p>&copy; 2019 Shant Garabetian</p>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function myReset() {
+            document.getElementById("myForm").reset();
+        }
+
+        function Result() {
+            var name = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var email = document.getElementById('email').value;
+            var comments = document.getElementById('comments').value;
+            document.write("Your Name is : " + name + "<br>");
+            document.write("Your Last Name is : " + lastName + "<br>");
+            document.write("Your Email is : " + email + "<br>");
+            document.write("Your Comment is : " + comments + "<br>");
+        }
+    </script>
+
+</body></html>

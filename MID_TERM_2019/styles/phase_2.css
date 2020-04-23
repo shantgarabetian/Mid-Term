@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+lable{
+    float: left;
+    width: 5em;
+    text-align: right; 
+}
+input{
+    margin-left: 1em;
+    margin-bottom: 1em;  
+}
+button{
+    margin-left: 4em;
+}
+textarea {
+    height: 2em;
+    width: 10em;
+    font-family: Arial; Helvetica, sans-serif;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: gold;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/*body control*/
+body {
+    width: 90% max-width:1024px;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+header {
+    text-align: center;
+    width: 96.875%;
+    padding: 15px 1.5625%;
+}
+
+main {
+    width: 59.375%;
+    padding: 15px 1.5625%;
+    float: right;
+}
+
+ol.circle {
+    list-style-type: circle;
+}
+
+aside {
+    width: 33%;
+    padding: 15px 1.5625%;
+    float: left;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+    padding: 10px 10px;
+}
+
+#roll_over {
+    background-image: url("../images/shant.jpg");
+    width:300px;
+    height: 200px;
+    padding: 1em;
+    background-repeat: no-repeat;
+
+}
+
+#roll_over:hover {
+    background-image: url("../images/sophia_scouting.jpg");
+    background-repeat: no-repeat;
+}
+.image{
+    transition: 4s;
+}
+.image:hover{
+    transform: rotate(180deg);
+    transform-origin: rotate(180deg);
+}
+
+figure {
+    border-bottom: 1px solid black;
+}
+h2{
+    font-family: "Sort Mill Goudy", serif;
+    animation: move_h2 2s ease-in-out 4s infinite alternate;
+}
+@keyframes move_h2{
+    from{margin-left:10%;
+    color: black;}
+    to{
+        margin-right: 60%;
+        color: red;
+    }
+}
+h3{
+    font-family: 'Lobster', cursive;
+}
+footer {
+    clear: both;
+    width: 96.875%;
+    padding: 15px 1.5625%;
+    text-align: center;
+}
